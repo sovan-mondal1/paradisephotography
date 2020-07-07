@@ -38,7 +38,7 @@
 }
 .header{
 	width: 100%;
-	height: 500px;
+	height: 277px;
 	background-position: top;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -86,7 +86,139 @@
   }
 }
 
+.header_down{
+	height:85%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.header_down button{
+	background: rgb(241,255,255,0.2);
+	border: none;
+	color: #fff;
+	font-size: 1.3em;
+	font-family: 'Yellowtail', cursive;
+	border-radius: 10px;
+	padding: 5px 15px;
+	transition: 0.3s;
+	position: relative;
+}
+.header_down button:hover{
+	color: yellow;
+}
 
-/*<div class="header_down">
-		<button>Signup</button>	
-	</div>*/
+
+/*-----------head portion close---------*/
+
+
+.ip{
+	width: 100%;
+}
+.ip .left{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+}
+.ip .left img{
+	width: 80%;
+	position: relative;
+
+}
+.ip .right{
+	width: 100%;
+	font-family: 'Yellowtail', cursive;
+
+}
+.ip .right h2{
+	padding: 10px 15px;
+}
+.ip .right p{
+	padding: 0 15px;
+	text-align: justify;
+	line-height: 1.2em;
+	font-size: 1.2em;
+}
+#last_ip{
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+.tooltip i:hover{
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px); }
+  100% { transform: translate(1px, -2px); }
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  font-family: arial;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+.connect{
+  width: 100%;
+  height: 50vh;
+  text-align: center;
+  padding-top: 10px;
+}
+.connect button{
+  margin: 0 20px;
+  padding: 10px 35px;
+  font-family: 'Yellowtail', cursive;
+  font-size: 1.3em;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+}
+#signup{
+  background: #FF00A2;
+  transition: .3s;
+}
+#login{
+  background: #8C00FF;
+  transition: .3s;
+}
+#signup:hover{
+  background: #F010B6;
+}
+#login:hover{
+  background: #7719C4;
+}
